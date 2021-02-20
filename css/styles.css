@@ -9,6 +9,7 @@
   --light-grey: #f5f4fa;
   --blue: #2196f3;
 
+  --icons: #afb1b8;
   --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   --card-people: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -423,7 +424,7 @@ h2 {
 }
 
 .smm-link .icon {
-  fill: #afb1b8;
+  fill: var(--icons);
   width: 20px;
   height: 20px;
 }
@@ -433,6 +434,55 @@ h2 {
 }
 
 .smm-link .icon:hover {
+  fill: currentColor;
+}
+
+/* Постоянные клиенты */
+
+.clients-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  padding-top: 95px;
+  margin-bottom: 50px;
+}
+
+.client {
+  display: flex;
+  padding-bottom: 95px;
+}
+
+.client .client-item {
+  display: flex;
+  margin-right: 30px;
+}
+
+.client-item .client-link {
+  display: flex;
+  width: 170px;
+  height: 90px;
+  color: var(--blue);
+  border: 1px solid var(--icons);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-link {
+  fill: var(--icons);
+}
+
+.client-link:hover,
+.client-link:focus {
+  color: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+.client-link .clients-icon:hover,
+.client-link .clients-icon:focus {
   fill: currentColor;
 }
 
@@ -447,6 +497,7 @@ h2 {
 }
 
 .foot {
+  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -501,6 +552,63 @@ h2 {
 .footer-link .link:hover,
 .footer-link .link:focus {
   color: var(--blue);
+}
+
+.join-container {
+  margin-left: 70px;
+}
+
+.join-title {
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+  margin-top: 12px;
+
+  color: var(--white-text);
+}
+
+.join-item {
+  display: flex;
+}
+
+.join-li {
+  display: flex;
+}
+
+.join-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  color: var(--white);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.join-li .join-link:hover,
+.join-li .join-link:focus {
+  background-color: var(--blue);
+}
+
+.join-item .join-li {
+  margin-right: 10px;
+}
+
+.join-item .join-li:last-child {
+  margin-right: 0;
+}
+
+.join-li .icon {
+  width: 20px;
+  height: 20px;
+
+  fill: currentColor;
 }
 
 /* Страница портфолио */
@@ -587,7 +695,6 @@ h2 {
 }
 
 .card {
-  box-shadow: var(--card-shadow);
   text-decoration: none;
 }
 
@@ -605,6 +712,10 @@ h2 {
 .card-content {
   padding: 20px 25px;
   border: 1px solid #eeeeee;
+}
+
+.card-content:hover {
+  box-shadow: var(--card-shadow);
 }
 
 .item .card-thumb {
