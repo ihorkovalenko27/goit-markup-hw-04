@@ -50,6 +50,10 @@ h2 {
   padding-bottom: 0;
 }
 
+.main-nav {
+  border-bottom: 1px solid var(--light-grey);
+}
+
 .main-nav,
 .navigation {
   display: flex;
@@ -408,32 +412,25 @@ h2 {
   margin-right: 0;
 }
 
-.smm .item:hover,
-.smm .item:focus {
-  color: var(--blue);
-}
-
 .smm .smm-link {
   background-color: var(--white);
-  color: var(--white);
+  color: var(--icons);
   width: 44px;
   height: 44px;
   border-radius: 50%;
   padding: 12px;
 }
 
+.smm .smm-link:hover,
+.smm .smm-link:focus {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
 .smm-link .icon {
-  fill: var(--icons);
+  fill: currentColor;
   width: 20px;
   height: 20px;
-}
-
-.smm .smm-link:hover {
-  background-color: var(--blue);
-}
-
-.smm-link .icon:hover {
-  fill: currentColor;
 }
 
 /* Постоянные клиенты */
@@ -467,15 +464,11 @@ h2 {
   display: flex;
   width: 170px;
   height: 90px;
-  color: var(--blue);
+  color: var(--icons);
   border: 1px solid var(--icons);
   border-radius: 4px;
   justify-content: center;
   align-items: center;
-}
-
-.client-link {
-  fill: var(--icons);
 }
 
 .client-link:hover,
@@ -484,8 +477,7 @@ h2 {
   border: 1px solid var(--blue);
 }
 
-.client-link .clients-icon:hover,
-.client-link .clients-icon:focus {
+.client-link .clients-icon {
   fill: currentColor;
 }
 
