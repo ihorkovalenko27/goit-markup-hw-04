@@ -692,7 +692,8 @@ h2 {
   color: var(--blue);
 }
 
-.card {
+.item .card {
+  display: block;
   text-decoration: none;
 }
 
@@ -712,7 +713,7 @@ h2 {
   border: 1px solid #eeeeee;
 }
 
-.works-example .item:hover {
+.item .card:hover {
   box-shadow: var(--card-shadow);
 }
 
